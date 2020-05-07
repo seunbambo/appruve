@@ -1,0 +1,7 @@
+.card {
+  min-height: 350px;
+}
+.card:hover {
+  box-shadow: 5px 2px 30px #cccccc;
+  transition: 0.3s ease-in-out;
+}
