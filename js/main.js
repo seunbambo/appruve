@@ -1,17 +1,17 @@
 var subscription = [
   {
     // Object @ 0 index
-    subscriptionType: "gold",
+    subscriptionType: "Gold",
     amount: 100,
   },
   {
     // Object @ 1 index
-    subscriptionType: "silver",
+    subscriptionType: "Silver",
     amount: 50,
   },
   {
     // Object @ 2 index
-    subscriptionType: "bronze",
+    subscriptionType: "Bronze",
     amount: 25,
   },
 ];
@@ -22,13 +22,14 @@ function getInfo() {
   //   var amount = document.getElementById("amount").value;
 
   for (var i = 0; i < subscription.length; i++) {
-    if (type == "gold") {
-      document.write("Gold is logged in!!!");
-      return;
-    } else if (type == "silver") {
-      document.write("silver subscriber is logged in!!!");
+    if (type == "Gold") {
+      document.write("You now have Gold subscription!");
       return;
     }
-    document.write("Bronze is logged in!!!");
+    if (type == "Silver") {
+      document.write("You now have Silver subscription!");
+      return;
+    }
+    document.write("You now have Bronze subscription!");
   }
 }
